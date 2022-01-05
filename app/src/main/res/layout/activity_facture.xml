@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isetsf.nejma.FactureActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_dota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="facture id"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_fact_id_detail"/>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="facture date"
+                    android:id="@+id/tv_fact_date_detail"/>
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="montant"
+                    android:id="@+id/tv_montant_fact_detail"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_below="@+id/card_view_dota2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/product_fact_list">
+
+</android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
